@@ -1,17 +1,223 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
-
 body {
-  padding: 0 3em;
-  background-color: #F5F5F5;
-  font-family: 'Karla';
+    background-color: #F5F5F5;
+    font-family: 'Karla';
+    line-height: 1.5em;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #118182;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-snlp {
+    width: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header-snlp img {
+    width: 100%;
+}
+
+.title {
+    padding: 100px 0;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    width: 100%;
 }
 
 h1 {
-  font-size: 60px;
-  color: white;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  text-shadow: -6px 6px 0px #00e6e6,
-               -12px 12px 0px #01cccc,
-               -18px 18px 0px #00bdbd;
+    font-size: 60px;
+    color: white;
+    margin: 30px 0 20px 0;
+    font-family: sans-serif;
+    text-shadow: -6px 6px 0px #00e6e6, -12px 12px 0px #01cccc, -18px 18px 0px #00bdbd;
+}
+
+h2 {
+    color: #01cccc;
+    margin: 40px 0 50px 0;
+}
+
+header p {
+    text-align: center;
+    color: #EEE;
+    width: 50%;
+    padding: 0 25%;
+}
+
+header p span {
+    border-bottom: 2px solid #00e6e6;
+    margin: 0 5px;
+}
+
+.container:nth-child(2) {
+    background-color: #F5F5F5;
+}
+
+.container:nth-child(2) a {
+  color: #00bdbd;
+  border-bottom: 2px solid #00bdbd;
+}
+
+.container:nth-child(3) {
+    background-color: #FFFFFF;
+}
+
+.container:nth-child(4) {
+    background-color: #38B145;
+    color: #FFFFFF;
+}
+
+.container:nth-child(4) a {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.container:nth-child(5) a {
+    color: #FFFFFF;
+}
+
+.container:nth-child(6) {
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 100vw;
+    padding: 50px 0;
+}
+
+.container p {
+    text-align: left;
+}
+
+.container video {
+    position: relative;
+    right: 0;
+}
+
+.col1 {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.col1 p {
+    padding: 0 20%;
+}
+
+.col1 h3, .col2 h3, .col3 h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.col2 {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.col2 .col {
+    width: 100%;
+}
+
+.col2 h3 {
+    text-align: center;
+    color: #01cccc;
+    width: 100%;
+}
+
+.col2 p {
+    padding: 0 20%;
+}
+
+.col3 {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.col3 p {
+    text-align: center;
+}
+
+.col3 .col {
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.col3 .col {
+  width: 80%;
+}
+
+.col3 .col p {
+    padding: 10px;
+}
+
+.wrong {
+    background-color: orange;
+}
+
+.right {
+    background-color: #00bdbd;
+}
+
+button {
+    position: relative;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    float: middle;
+    width: 150px;
+    background-color: #00e6e6;
+    color: #FFF;
+    font-size: 20px;
+    border: 0px;
+    box-shadow: -6px 6px 0px #01cccc, -12px 12px 0px #00bdbd;
+}
+
+@media (min-width: 1024px) {
+    .col2 .col {
+        width: 45%;
+    }
+    .col2 p {
+        padding: 0;
+    }
+    .col2 h3 {
+        text-align: left;
+    }
+    .col3 .col {
+        width: 25%;
+        box-sizing: border-box;
+        min-height: 100px;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .wrong {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .right {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+    }
 }
