@@ -232,7 +232,7 @@ header p span {
 button {
     position: relative;
     height: 40px;
-    margin: auto;
+    margin: 20px auto 50px;
     text-align: center;
     float: middle;
     width: 150px;
