@@ -10,6 +10,8 @@ header {
     text-align: center;
     background-color: #118182;
     font-size: 20px;
+    background-image: url(img/background.jpg);
+    background-size: cover;
 }
 
 a {
@@ -18,9 +20,10 @@ a {
 }
 
 .header-snlp {
-    width: 200px;
+    max-width: 300px;
+    width: 40%;
     position: relative;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .header-snlp img {
@@ -29,6 +32,10 @@ a {
 
 .title {
     padding: 100px 0;
+}
+
+p {
+    line-height: 1.2em;
 }
 
 h1,
@@ -49,31 +56,36 @@ h1 {
 h2 {
     color: #01cccc;
     margin: 40px 0 50px 0;
+    text-shadow: -2px 2px 0px #FFFFFF;
 }
 
 header p {
     text-align: center;
-    color: #EEE;
-    width: 50%;
-    padding: 0 25%;
+    color: #FFF;
+    width: 80%;
+    font-size: 25px;
+    line-height: 1.3em;
+    padding: 50px 10%;
+    background-color: rgba(0, 140, 140, 0.9);
 }
 
 header p span {
-    border-bottom: 2px solid #00e6e6;
+    border-bottom: 4px solid #00e6e6;
     margin: 0 5px;
 }
 
 .container:nth-child(2) {
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
 }
 
-.container:nth-child(2) a {
-  color: #00bdbd;
-  border-bottom: 2px solid #00bdbd;
+.container:nth-child(2) a,
+.container:nth-child(5) a {
+    color: #00bdbd;
+    border-bottom: 2px solid #00bdbd;
 }
 
 .container:nth-child(3) {
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
 }
 
 .container:nth-child(4) {
@@ -86,11 +98,16 @@ header p span {
     border-bottom: 2px solid #FFFFFF;
 }
 
-.container:nth-child(5) a {
+.container:nth-child(4) h3 {
     color: #FFFFFF;
 }
 
-.container:nth-child(6) {
+.container:nth-child(5) button a {
+    color: #FFFFFF;
+    border: none;
+}
+
+.container:nth-child(5) {
     background-color: #FFFFFF;
 }
 
@@ -101,6 +118,7 @@ header p span {
 
 .container p {
     text-align: left;
+    font-size: 20px;
 }
 
 .container video {
@@ -119,9 +137,12 @@ header p span {
     padding: 0 20%;
 }
 
-.col1 h3, .col2 h3, .col3 h3 {
+.col1 h3,
+.col2 h3,
+.col3 h3 {
     text-align: center;
     font-size: 30px;
+    color: #01cccc;
 }
 
 .col2 {
@@ -137,7 +158,6 @@ header p span {
 
 .col2 h3 {
     text-align: center;
-    color: #01cccc;
     width: 100%;
 }
 
@@ -159,22 +179,54 @@ header p span {
 .col3 .col {
     color: #FFF;
     margin: 20px 0;
-}
-
-.col3 .col {
-  width: 80%;
+    width: 80%;
 }
 
 .col3 .col p {
-    padding: 10px;
+    padding: 20px;
+    margin: 0;
 }
 
 .wrong {
-    background-color: orange;
+    background-image: url('img/1f926-1f3fe.png');
+    background-blend-mode: soft-light;
+    background-size: auto 90%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.wrong p {
+    font-size: 25px;
+    /* text-shadow: 1px 1px #ff5200; */
+    text-shadow: 1px 1px #222;
+}
+
+.b-one {
+    /* background-color: #FD8F0F; */
+    background-color: #5ca4de;
+}
+
+.b-two {
+    /* background-color: #FFD609; */
+    background-color: #55bb7c;
+}
+
+.b-three {
+    /* background-color: #FC4F11; */
+    background-color: #00bdbd;
 }
 
 .right {
-    background-color: #00bdbd;
+    background-color: #FD8F0F;
+    background-image: url('img/1f481-1f3fd.png');
+    background-blend-mode: soft-light;
+    background-size: auto 90%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.right p {
+    font-size: 25px;
 }
 
 button {
@@ -204,7 +256,7 @@ button {
     .col3 .col {
         width: 25%;
         box-sizing: border-box;
-        min-height: 100px;
+        min-height: 130px;
         margin: 10px;
         position: relative;
         overflow: hidden;
